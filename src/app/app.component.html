@@ -1,0 +1,23 @@
+<h1>CROSS SITE SCRIPTING</h1>
+
+Using interpolation
+
+<p>{{ unSafeString }}</p>
+
+<p [innerHTML]="unSafeString"></p>
+
+Anchor Tag
+
+<a [href]="unSafeURL">Click here</a>
+
+Genuine URL
+<a [href]="geneuieURL">Click here</a>
+
+<!-- Untrusted URL
+<iframe width="100" height="100" [src]="youTubeURL"></iframe> -->
+
+<br />
+Trusted Source<br />
+
+
+<iframe width="500" height="500" [src]="safeYouTuebURL"></iframe>
